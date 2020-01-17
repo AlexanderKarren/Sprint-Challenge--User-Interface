@@ -154,6 +154,46 @@ header > div:last-child > img {
     justify-content: center;
 }
 
+.about-heading {
+    display:flex;
+    justify-content:center;
+    border-bottom: 1px dashed black;
+    padding:0 0 2% 0;
+    margin:0 2.5% 20px 2.5%;
+}
+
+.thumbnails {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin:20px 2.5%;
+}
+
+.thumbnails > div {
+    width:48%;
+    margin-bottom:30px;
+    border-bottom:1px dashed black;
+}
+
+.thumbnails > div > p {
+    font-size:95%;
+}
+
+.thumbnails > div > h2 {
+    margin-top:10px;
+}
+
+.thumbnails > div > div {
+    border: 1.5px solid black;
+    border-radius:8px;
+    width:115px;
+    font-size:85%;
+    padding:9px;
+    text-align:center;
+    text-decoration:bold;
+    margin:15px 0 15px 0;
+}
+
 .box:nth-child(1) {
     background-color:teal;
 }
@@ -206,6 +246,10 @@ header > div:last-child > img {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.work-together {
+    margin:0 2.5% 20px 2.5%;
 }
 
 footer {
