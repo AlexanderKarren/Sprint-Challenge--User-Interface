@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    border:1px solid gray;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -49,6 +50,7 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width:100%;
 }
 
 html, body {
@@ -69,6 +71,42 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+/* header */
+header > div:first-child {
+    display:flex;
+    justify-content: space-between;
+}
+
+header > div:first-child > div {
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-end;
+    flex-wrap:wrap;
+}
+
+header > div:first-child > div:first-child {
+    width:20%;
+}
+
+header > div:first-child > div:last-child {
+    width:80%;
+    font-size:90%;
+}
+/* links */
+header > div:first-child > div > div {
+    margin: 0 2% 0 2%;
+}
+/* jumbo image */
+header > div:last-child {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+header > div:last-child > img {
+    margin:30px 0 30px 0;
 }
 
 .top-content {
