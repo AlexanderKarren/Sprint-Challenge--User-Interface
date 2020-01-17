@@ -38,11 +38,19 @@ Semantic tags are tags used to make your web pages easier to style, and improve 
 
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
 
+Block creates a new line for every element and take up the entire width of the page, inline places them side-by-side.
+
 3. What are the 4 areas of the box model?
+
+Margin, border, padding and content.
 
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+Cross axis.
+
 5. Explain why git is valuable to a team of developers.
+
+Git allows you every developer to be able to view different versions of *their own* work, as well as the work of their peers.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
