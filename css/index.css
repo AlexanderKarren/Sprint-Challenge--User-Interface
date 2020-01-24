@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    /* border:1px solid gray; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -49,6 +50,7 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width:100%;
 }
 
 html, body {
@@ -66,9 +68,50 @@ p {
     line-height: 1.4;
 }
 
+a {
+    color:inherit;
+    text-decoration:inherit;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+/* header */
+header > div:first-child {
+    display:flex;
+    justify-content: space-between;
+}
+
+header > div:first-child > div {
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-end;
+    flex-wrap:wrap;
+}
+
+header > div:first-child > div:first-child {
+    width:20%;
+}
+
+header > div:first-child > div:last-child {
+    width:80%;
+    font-size:90%;
+}
+/* links */
+header > div:first-child > div > div {
+    margin: 0 2% 0 2%;
+}
+/* jumbo image */
+header > div:last-child {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+header > div:last-child > img {
+    margin:30px 0 30px 0;
 }
 
 .top-content {
@@ -104,12 +147,91 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.about-heading {
+    display:flex;
+    justify-content:center;
+    border-bottom: 1px dashed black;
+    padding:0 0 2% 0;
+    margin:0 2.5% 20px 2.5%;
+}
+
+.thumbnails {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin:20px 2.5%;
+}
+
+.thumbnails > div {
+    width:48%;
+    margin-bottom:30px;
+    border-bottom:1px dashed black;
+}
+
+.thumbnails > div > p {
+    font-size:95%;
+}
+
+.thumbnails > div > h2 {
+    margin-top:10px;
+}
+
+.thumbnails > div > div {
+    border: 1.5px solid black;
+    border-radius:8px;
+    width:115px;
+    font-size:85%;
+    padding:9px;
+    text-align:center;
+    text-decoration:bold;
+    margin:15px 0 15px 0;
+}
+
+.box:nth-child(1) {
+    background-color:teal;
+}
+
+.box:nth-child(2) {
+    background-color:gold;
+}
+
+.box:nth-child(3) {
+    background-color:cadetblue;
+}
+
+.box:nth-child(4) {
+    background-color:coral;
+}
+
+.box:nth-child(5) {
+    background-color:crimson;
+}
+
+.box:nth-child(6) {
+    background-color:forestgreen;
+}
+
+.box:nth-child(7) {
+    background-color:darkorchid;
+}
+
+.box:nth-child(8) {
+    background-color:hotpink;
+}
+
+.box:nth-child(9) {
+    background-color:indigo;
+}
+
+.box:nth-child(10) {
+    background-color:dodgerblue;
 }
 
 .bottom-content {
@@ -124,6 +246,10 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.work-together {
+    margin:0 2.5% 20px 2.5%;
 }
 
 footer {
